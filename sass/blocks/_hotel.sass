@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 20px
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -16,7 +17,7 @@
   &-name
     font-size: 24px
     line-height: 30px
-    // text-transform: uppercase
+    text-transform: uppercase
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -24,6 +25,8 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+
 .stars
   flex-basis: 100%
 .offer
@@ -46,16 +49,46 @@
   &__counter
     font-size: 14px
     line-height: 18px
-.swiper-container 
-  width: 600px;
-  height: 300px;
+.swiper-container
+  width: 100%
+  height: 450px
   position: relative
+  border-radius: 8px
+  &:after
+    content: ''
+    position: absolute
+    z-index: 98
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .slider
+  max-width: 728px
+  object-fit: cover
   &-button
     position: absolute
-    top: 0
+    top: 50%
+    transform: translateY(-50%)
     z-index: 99
     width: 30px
     height: 30px
     border: none
-    background-color: #8d1818
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)
+.hotel-photo
+  max-height: 450px
+  height: 100%
+  width: 100%
+  object-fit: cover
