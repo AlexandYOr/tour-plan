@@ -633,6 +633,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline: none;
 }
 
 .slider-button--next {
