@@ -11,6 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=6af111e0-e4fc-4611-92b5-bc306efe4279&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -158,9 +159,7 @@
           </div>
           <!-- /.booking -->
           <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041212469909!2d98.29254745091164!3d7.890757407918324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2snl!4v1615288841943!5m2!1sru!2snl"
-              width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="map" style="width: 100%; height: 213px"></div>
           </div>
           <!-- /.map -->
         </div>
@@ -173,6 +172,7 @@
   <!-- /.hotel -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
