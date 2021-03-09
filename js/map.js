@@ -11,5 +11,5 @@ var myPlacemark = new ymaps.Placemark(
 
 myMap.geoObjects.add(myPlacemark);
 
-
+myMap.behaviors.disable(['scrollZoom'])
 }
