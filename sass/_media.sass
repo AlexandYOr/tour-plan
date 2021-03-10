@@ -19,9 +19,9 @@
       padding-bottom: 30px
     &__search
       margin-left: auto
+      margin-right: 73px
     &-menu
-      padding-top: 22px
-      padding-bottom: 22px
+      padding: 22px 13.5px
       &__link
         font-size: 12px
         line-height: 15px
@@ -29,6 +29,7 @@
     &__input
       max-width: 340px
   .hotel
+    padding-bottom: 60px
     &-grid
       display: flex
       flex-direction: column
@@ -37,15 +38,29 @@
     &-slider
       width: 100%
       margin-bottom: 30px
+  .newsletter
+    padding: 92px 0 93px 0
+    &-tittle
+      color: $light
+      font-weight: 300
+      font-size: 24px
+      line-height: 30px
+      margin: 0
   .booking
+    padding: 28px 22px
     width: 340px
+    height: 210px
   .map
     width: 340px
   .reviews
     &-slider
       &__item
         max-width: 579px 
-@media (max-width: 768px)
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 51px
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -121,18 +136,56 @@
           transform: translate(50%, 0)
           margin-right: -65px
 @media (max-width: 576px)
+  .container
+    max-width: 280px
   .logo
     width: 99px
   .hotel
+    padding: 0
+    margin-top: 0
+    margin-bottom: 40px
     &-slider
-      height: 250px
-  .hotel
-    &-slider
+      height: 180px
       margin-bottom: 20px
+    &-info
+      padding-bottom: 38px
+    &-right
+      max-height: 403px
+      padding-bottom: 0px
   .newsletter
     padding: 76px 0 83px 0
+    height: 319px
     &__title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
       margin-bottom: 37px
-      margin-top: 20px
-  .subscribe
-    width: 100%
+    &__subscribe
+      width: 280px
+    &-title
+      &__strong
+        margin-top: 5px
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .map
+    height: 173px
+  .reviews
+    &__title
+      width: 245px
+      margin: auto
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -95px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -95px
+

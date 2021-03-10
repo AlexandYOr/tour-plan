@@ -11,7 +11,7 @@
       margin-top: 4px
     &__name
       margin-bottom: 0
-      margin-top: 4px
+      margin-top: 2px
     &__description
       margin: 5px 0px
   &-name
@@ -23,6 +23,7 @@
     flex-wrap: wrap
     align-items: center
   &-description
+    margin: 0px
     font-size: 12px
     line-height: 15px
   &-grid
@@ -33,6 +34,7 @@
     flex-direction: column
     justify-content: space-between
   &-slider
+    margin-right: 30px
     height: 450px
     max-width: 728px
     object-fit: cover
@@ -74,7 +76,10 @@
         left: 18px
         background-image: url(../img/arrow-prev.svg)
 .stars
+  display: flex
   flex-basis: 100%
+  &__image
+    margin-right: 2px
 .offer
   font-size: 10px
   line-height: 13px

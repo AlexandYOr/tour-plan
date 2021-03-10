@@ -1,4 +1,5 @@
 .newsletter
+  height: 260px
   position: relative
   padding: 98px 0px 87px 0px
   // background-image: url(../img/newsletter_bgi.jpeg)
@@ -23,15 +24,15 @@
     max-width: 731px
     margin: auto
   &-title
-    display: flex
-    flex-direction: column
     color: $light
     font-family: Mulish
     font-style: normal
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    margin: 0px
     &__strong
+      display: block
       font-weight: 600
       font-size: 36px
       line-height: 45px
@@ -56,11 +57,18 @@
     line-height: 18px;
   &__button
     position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
     right: 0
     top: 0
-    height: 100%
     min-width: 65px
+    max-width: 65px
+    height: 100%
     border: none
+    outline: none
     background-color: $primary
     color: $light
-
+    overflow: hidden
+    font-size: 12px
+    line-height: 15px
