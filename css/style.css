@@ -1089,6 +1089,7 @@ template {
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 57px;
+  margin-top: 0px;
 }
 
 .activities-wrapper {
@@ -1259,6 +1260,10 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 51px;
+  }
+  .activities {
+    padding-top: 0;
+    margin-top: 50px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1459,11 +1464,18 @@ template {
             transform: translate(50%, 0);
     margin-right: -95px;
   }
+  .activities {
+    padding-top: 0px;
+    margin-top: 22px;
+  }
   .activities__title {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
     margin-top: 0px;
+  }
+  .activities__card {
+    height: 257px;
   }
 }
 /*# sourceMappingURL=style.css.map */
