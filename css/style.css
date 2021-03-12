@@ -2022,9 +2022,8 @@ template {
     font-size: 8px;
     line-height: 10px;
   }
-}
-
-.stars__image {
-  display: none;
+  .stars__image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
