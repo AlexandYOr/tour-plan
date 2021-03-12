@@ -1247,7 +1247,7 @@ template {
 
 .main__image {
   width: 366px;
-  height: 500px;
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1259,7 +1259,7 @@ template {
   padding: 46px 21px 30px 43px;
 }
 
-.main-booking__tittle {
+.main-booking__title {
   margin-top: 6px;
   margin-bottom: 27px;
   font-family: Mulish;
@@ -1374,13 +1374,14 @@ template {
 }
 
 .secondary__image {
-  min-width: 350px;
-  max-width: 350px;
+  width: 350px;
   height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .secondary-booking {
-  min-height: 250px;
+  height: 250px;
   background-color: #0A223D;
   color: #fff;
   padding: 30px 21px 25px 32px;
@@ -1469,7 +1470,7 @@ template {
   line-height: 30px;
 }
 
-.offer__main {
+.offer-main {
   position: absolute;
   z-index: 2;
   background-color: #EC1F46;
@@ -1485,7 +1486,7 @@ template {
   line-height: 15px;
 }
 
-.offer__secondary {
+.offer-secondary {
   position: absolute;
   z-index: 2;
   background-color: #EC1F46;
@@ -1608,6 +1609,48 @@ template {
     width: 340px;
     height: 250px;
   }
+  .packages-wrapper {
+    -ms-grid-rows: 450px 450px;
+        grid-template-rows: 450px 450px;
+  }
+  .main__image {
+    max-width: 228px;
+    max-height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-booking {
+    padding: 30px 11px 15px 21px;
+  }
+  .main-booking__title {
+    margin-bottom: 18px;
+  }
+  .main-booking__room {
+    margin-bottom: 20px;
+  }
+  .main-booking__info {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .main-booking__text {
+    font-size: 10px;
+  }
+  .secondary-booking {
+    padding: 40px 11px 12px 16px;
+  }
+  .secondary-booking__title {
+    margin-top: 0px;
+  }
+  .secondary-booking__text {
+    font-size: 8px;
+  }
+  .secondary-booking__value--new {
+    font-size: 20px;
+  }
+  .secondary__ximage {
+    min-height: 230px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1727,6 +1770,124 @@ template {
   .card {
     width: 100%;
   }
+  .packages-wrapper {
+    -ms-grid-rows: 300px 300px;
+        grid-template-rows: 300px 300px;
+    row-gap: 15px;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .main__image {
+    max-width: 187px;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-booking {
+    padding: 30px 11px 15px 21px;
+  }
+  .main-booking__title {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+  .main-booking__room {
+    margin-bottom: 20px;
+  }
+  .main-booking__info {
+    display: none;
+  }
+  .main-booking__text {
+    font-size: 10px;
+  }
+  .main-booking__order {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-booking__price {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px;
+  }
+  .main-booking__value--old {
+    font-size: 12px;
+  }
+  .main-booking__value--new {
+    font-size: 20px;
+  }
+  .main-booking__button {
+    width: 100%;
+    padding: 5px 18px 5px 18px;
+  }
+  .offer-main {
+    font-size: 10px;
+    padding: 4px 10px 5px 9px;
+  }
+  .secondary-booking {
+    padding: 10px 11px 12px 16px;
+  }
+  .secondary-booking__title {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 14px;
+  }
+  .secondary-booking__text {
+    font-size: 7px;
+    margin-bottom: 3px;
+  }
+  .secondary-booking__room {
+    margin-bottom: 12px;
+  }
+  .secondary-booking__value--new {
+    font-size: 20px;
+  }
+  .secondary-booking__order {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .secondary-booking__price {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px;
+  }
+  .secondary-booking__value--old {
+    font-size: 14px;
+  }
+  .secondary-booking__value--new {
+    font-size: 22px;
+  }
+  .secondary-booking__button {
+    width: 100%;
+    padding: 5px 18px 5px 18px;
+  }
+  .secondary__image {
+    min-height: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1809,5 +1970,61 @@ template {
   .activities__card {
     height: 257px;
   }
+  .packages {
+    width: 100%;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: 100% 100% 100% 100% 100%;
+        grid-template-columns: 100% 100% 100% 100% 100%;
+    -ms-grid-rows: 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-areas: 'first' 'second' 'third' 'fourth' 'fifth';
+  }
+  .packages__title {
+    width: 245px;
+    margin: auto;
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__image {
+    min-height: 100px;
+    min-width: 100%;
+  }
+  .main-booking {
+    padding: 10px 11px 12px 16px;
+  }
+  .main-booking__title {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 14px;
+  }
+  .main-booking__room {
+    margin-bottom: 12px;
+  }
+  .main-booking__text {
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+  .offer-main {
+    border-radius: 0px 4px 4px 0px;
+    padding: 8px 12px 7px 11px;
+    top: 26px;
+    left: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+.stars__image {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

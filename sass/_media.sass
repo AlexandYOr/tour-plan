@@ -73,6 +73,38 @@
   .card
     width: 340px
     height: 250px
+  .packages
+    &-wrapper
+      grid-template-rows: 450px 450px
+  .main
+    &__image
+      max-width: 228px
+      max-height: 450px
+      object-fit: cover
+    &-booking
+      padding: 30px 11px 15px 21px
+      &__title
+        margin-bottom: 18px
+      &__room
+        margin-bottom: 20px
+      &__info
+        margin-top: 0px
+        margin-bottom: 30px
+        font-size: 12px
+      &__text
+        font-size: 10px
+  .secondary
+    &-booking
+      padding: 40px 11px 12px 16px
+      &__title
+        margin-top: 0px
+      &__text
+        font-size: 8px
+      &__value
+        &--new
+          font-size: 20px
+    &__ximage
+      min-height: 230px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -150,6 +182,82 @@
           margin-right: -65px
   .card
     width: 100%
+  .packages
+    &-wrapper
+      grid-template-rows: 300px 300px
+      row-gap: 15px
+      column-gap: 15px
+  .main
+    &__image
+      max-width: 187px
+      max-height: 300px
+      object-fit: cover
+    &-booking
+      padding: 30px 11px 15px 21px
+      &__title
+        margin-bottom: 18px
+        font-size: 14px
+      &__room
+        margin-bottom: 20px
+      &__info
+        display: none
+      &__text
+        font-size: 10px
+      &__order
+        flex-direction: row
+        flex-wrap: wrap
+      &__price
+        width: 100%
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 8px
+      &__value
+        &--old
+          font-size: 12px
+        &--new
+          font-size:  20px
+      &__button
+        width: 100%
+        padding: 5px 18px 5px 18px
+  .offer
+    &-main
+      font-size: 10px
+      padding: 4px 10px 5px 9px
+  .secondary
+    &-booking
+      padding: 10px 11px 12px 16px
+      &__title
+        font-size: 12px
+        margin-top: 0px
+        margin-bottom: 14px
+      &__text
+        font-size: 7px
+        margin-bottom: 3px
+      &__room
+        margin-bottom: 12px
+      &__value
+        &--new
+          font-size: 20px
+      &__order
+        flex-direction: row
+        flex-wrap: wrap
+      &__price
+        width: 100%
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 8px
+      &__value
+        &--old
+          font-size: 14px
+        &--new
+          font-size:  22px
+      &__button
+        width: 100%
+        padding: 5px 18px 5px 18px
+    &__image
+      min-height: 100px
 @media (max-width: 576px)
   .container
     max-width: 280px
@@ -213,4 +321,48 @@
       margin-top: 0px
     &__card
       height: 257px
+  .packages
+    width: 100%
+    &-wrapper
+      grid-template-columns: 100% 100% 100% 100% 100% 
+      grid-template-rows: 300px 300px 300px 300px 300px 
+      grid-template-areas: 'first' 'second' 'third' 'fourth' 'fifth'
+    &__title
+      width: 245px
+      margin: auto
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+  .main
+    flex-direction: column
+    &__image
+      min-height: 100px
+      min-width: 100%
+    &-booking
+      padding: 10px 11px 12px 16px
+      &__title
+        font-size: 12px
+        margin-top: 0px
+        margin-bottom: 14px
+      &__room
+        margin-bottom: 12px
+      &__text
+        font-size: 8px
+        margin-bottom: 3px
+  .offer
+    &-main
+      border-radius: 0px 4px 4px 0px
+      padding: 8px 12px 7px 11px
+      top: 26px
+      left: 0
+      color: $light
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+
+
+
+.stars
+  &__image
+    display: none
 

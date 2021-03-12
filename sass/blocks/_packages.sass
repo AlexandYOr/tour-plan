@@ -39,14 +39,14 @@
   overflow: hidden
   &__image
     width: 366px
-    height: 500px
+    max-height: 500px
     object-fit: cover
   &-booking
     max-width: 364px
     background-color: $dark
     color: $light
     padding: 46px 21px 30px 43px
-    &__tittle
+    &__title
       margin-top: 6px
       margin-bottom: 27px
       font-family: Mulish
@@ -101,6 +101,7 @@
         font-weight: bold
         font-size: 24px
         line-height: 30px
+
 .stars
   &__image
     &--packages
@@ -114,11 +115,11 @@
   overflow: hidden
   flex-direction: column
   &__image
-    min-width: 350px
-    max-width: 350px
+    width: 350px
     height: 250px
+    object-fit: cover
   &-booking
-    min-height: 250px
+    height: 250px
     background-color: $dark
     color: $light
     padding: 30px 21px 25px 32px
@@ -169,7 +170,7 @@
         line-height: 30px
 
 .offer
-  &__main
+  &-main
     position: absolute
     z-index: 2
     background-color: $primary
@@ -183,17 +184,17 @@
     font-weight: 600
     font-size: 12px
     line-height: 15px
-  &__secondary
-    position: absolute
-    z-index: 2
-    background-color: $primary
-    border-radius: 0px 4px 4px 0px
-    padding: 8px 12px 7px 11px
-    top: 26px
-    left: 0
-    color: $light
-    font-family: Mulish
-    font-style: normal
-    font-weight: 600
-    font-size: 8px
-    line-height: 10px
+  &-secondary
+      position: absolute
+      z-index: 2
+      background-color: $primary
+      border-radius: 0px 4px 4px 0px
+      padding: 8px 12px 7px 11px
+      top: 26px
+      left: 0
+      color: $light
+      font-family: Mulish
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
