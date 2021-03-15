@@ -1761,7 +1761,7 @@ template {
   color: #e0e0e0;
 }
 
-.footer-bottom__links {
+.footer__bottom-links {
   padding-left: 10px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1770,7 +1770,7 @@ template {
   grid-column: 2 / 4;
 }
 
-.footer-bottom__link {
+.footer__bottom-link {
   text-decoration: none;
   font-family: Mulish;
   font-style: normal;
@@ -1781,7 +1781,7 @@ template {
   margin-right: 10px;
 }
 
-.footer-bottom__icon {
+.footer__bottom-icon {
   -ms-grid-column-align: end;
       justify-self: end;
   -ms-grid-column: 4;
@@ -2040,7 +2040,7 @@ template {
   .footer__info {
     font-size: 12px;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     padding-left: 0;
     -ms-grid-column-align: start;
         justify-self: start;
@@ -2048,7 +2048,7 @@ template {
     -ms-grid-column-span: 6;
     grid-column: 1 / 7;
   }
-  .footer-bottom__icon {
+  .footer__bottom-icon {
     -ms-grid-column: 9;
     -ms-grid-column-span: 4;
     grid-column: 9 / 13;
@@ -2543,7 +2543,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
   }
-  .footer-bottom__icon {
+  .footer__bottom-icon {
     width: 136px;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
@@ -2557,7 +2557,7 @@ template {
         justify-self: start;
     margin-top: 28px;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     display: block;
     width: 100%;
     -ms-grid-row: 8;
@@ -2565,15 +2565,15 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer-bottom__link {
+  .footer__bottom-link {
     font-size: 11px;
     margin-right: 13px;
   }
-  .footer__icon {
+  .footer-icon {
     padding: 0;
     margin: 0;
   }
-  .footer__icon-wrapper {
+  .footer-icon-wrapper {
     min-width: 30px;
   }
   .footer__message {
