@@ -377,16 +377,26 @@
       min-height: 100px
       min-width: 100%
     &-booking
+      width: 100%
       padding: 10px 11px 12px 16px
       &__title
-        font-size: 12px
+        font-size: 18px
         margin-top: 0px
         margin-bottom: 14px
       &__room
         margin-bottom: 12px
       &__text
-        font-size: 8px
+        font-size: 14px
         margin-bottom: 3px
+  .secondary
+    &__image
+      width: 100%
+    &-booking
+      &__title
+        font-size: 18px
+      &__text
+        font-size: 14px
+
   .offer
     &-main
       border-radius: 0px 4px 4px 0px
@@ -425,4 +435,18 @@
         grid-column: 1
       &-form
         grid-row: 7
+        grid-column: 1
+        margin-bottom: 0
+    &__info
+      width: 100%
+    &__button 
+      display: block
+      order: 1
+    &-bottom
+      &__icon
+        grid-row: 8
+        grid-column: 1
+        justify-self: start
+      &__links
+        grid-row: 9
         grid-column: 1

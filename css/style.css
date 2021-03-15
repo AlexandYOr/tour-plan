@@ -1253,7 +1253,7 @@ template {
 }
 
 .main-booking {
-  max-width: 364px;
+  width: 364px;
   background-color: #0A223D;
   color: #fff;
   padding: 46px 21px 30px 43px;
@@ -1551,8 +1551,8 @@ template {
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
-  grid-auto-rows: minmax(50px, -webkit-min-content);
-  grid-auto-rows: minmax(50px, min-content);
+  grid-auto-rows: minmax(22px, -webkit-min-content);
+  grid-auto-rows: minmax(22px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1606,6 +1606,7 @@ template {
 
 .footer__contact-form {
   grid-column: span 2;
+  margin-bottom: 75px;
 }
 
 .footer__form {
@@ -1735,42 +1736,15 @@ template {
   color: #e0e0e0;
 }
 
-.bottom {
-  margin-top: 95px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.footer-bottom__links {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
 }
 
-.bottom-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 695px;
-}
-
-.bottom__icon {
-  width: 136px;
-  height: 22px;
-}
-
-.bottom__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 283px;
-}
-
-.bottom__link {
+.footer-bottom__link {
   text-decoration: none;
   font-family: Mulish;
   font-style: normal;
@@ -1778,6 +1752,17 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+  margin-right: 10px;
+}
+
+.footer-bottom__icon {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4 / 6;
+  width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
@@ -2336,10 +2321,11 @@ template {
     min-width: 100%;
   }
   .main-booking {
+    width: 100%;
     padding: 10px 11px 12px 16px;
   }
   .main-booking__title {
-    font-size: 12px;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 14px;
   }
@@ -2347,8 +2333,17 @@ template {
     margin-bottom: 12px;
   }
   .main-booking__text {
-    font-size: 8px;
+    font-size: 14px;
     margin-bottom: 3px;
+  }
+  .secondary__image {
+    width: 100%;
+  }
+  .secondary-booking__title {
+    font-size: 18px;
+  }
+  .secondary-booking__text {
+    font-size: 14px;
   }
   .offer-main {
     border-radius: 0px 4px 4px 0px;
@@ -2406,6 +2401,30 @@ template {
   .footer__contact-form {
     -ms-grid-row: 7;
     grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+  .footer__info {
+    width: 100%;
+  }
+  .footer__button {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-bottom__icon {
+    -ms-grid-row: 8;
+    grid-row: 8;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .footer-bottom__links {
+    -ms-grid-row: 9;
+    grid-row: 9;
     -ms-grid-column: 1;
     grid-column: 1;
   }
