@@ -69,6 +69,7 @@
   .activities
     padding-top: 0
     margin-top: 50px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -113,33 +114,67 @@
     &__image
       min-height: 230px
   .footer
+    padding-top: 50px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 40px
     &__input
       flex-basis: 49%
     &__logo
+      width: 97px
       grid-row: 1 / 2
       grid-column: span 2
+    &__title
+      margin-top: 8px
+      &--mb-3
+        margin-top: 4px
     &__social
       &-network
+        padding-top: 28px
+        padding-left: 11px
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: span 7
         align-self: center
+        justify-self: center
+      &-links
+        padding-top: 7px
     &__categories
+      padding-left: 0
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: span 3
     &__additional
-      grid-column: span 2
+      padding-left: 23px
+      grid-column: span 5
     &__legal
-      grid-column: span 2
+      justify-self: start
+      padding-left: 25px
+      grid-column: span 4
+    &__text
+      margin-bottom: 23px
+    &__icon
+      margin-left: 5px
     &__contact
       &-details
+        padding-top: 18px
         grid-row: 3
-        grid-column: span 5
+        grid-column: span 10
       &-form
-        grid-column: span 5
+        padding: 0
+        grid-column: span 10
         grid-row: 4
+        margin-bottom: 16px
+    &__input
+      flex-basis: 47%
+    &__info
+      font-size: 12px
+    &-bottom
+      &__links
+        padding-left: 0
+        justify-self: start
+        grid-column: 1 / 7
+      &__icon
+        grid-column: 9 / 13
+        justify-self: end
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -352,6 +387,7 @@
   .activities
     padding-top: 0px
     margin-top: 22px
+    padding-bottom: 42px
     &__title
       margin-bottom: 36px
       font-size: 18px
@@ -396,7 +432,6 @@
         font-size: 18px
       &__text
         font-size: 14px
-
   .offer
     &-main
       border-radius: 0px 4px 4px 0px
@@ -412,41 +447,90 @@
       display: none
   .footer
     &-wrapper
+      grid-auto-rows: minmax(44px, min-content)
       grid-template-columns: 1fr
+      grid-row-gap: 30px
     &__logo
+      padding-top: 15px
       grid-row: 1
       grid-column: 1
+    &__title
+      margin: 0
+      margin-right: 43px
+      margin-bottom: 19px
+      &--inline
+        margin-top: 8px
+        margin-bottom: 24px
+      &--mb-1
+        margin-bottom: 10px
     &__social
       &-network
+        display: flex
+        flex-wrap: wrap
+        max-width: 240px
+        justify-self: start
+        padding: 0
+        margin: 0
         grid-row: 2
         grid-column: 1
+      &-links
+        padding: 0
+        padding-left: 3px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
+      padding: 0
+      margin: 0
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
       grid-column: 1
+    &__legal
+      padding: 0
+      margin: 0
+      grid-row: 3
+      grid-column: 1
+    &__text
+      margin-top: 24px
     &__contact
       &-details
+        max-width: 275px
+        padding: 0
+        margin: 0
+        margin-top: 5px
         grid-row: 6
         grid-column: 1
       &-form
+        width: 280px
+        padding-top: 5px
         grid-row: 7
         grid-column: 1
         margin-bottom: 0
     &__info
       width: 100%
+      margin-bottom: 13px
     &__button 
       display: block
       order: 1
     &-bottom
       &__icon
+        width: 136px
+        grid-row: 8 / 9
+        grid-column: 1
+        align-self: end
+        justify-self: start
+        margin-top: 28px
+      &__links
+        display: block
+        width: 100%
         grid-row: 8
         grid-column: 1
-        justify-self: start
-      &__links
-        grid-row: 9
-        grid-column: 1
+      &__link
+        font-size: 11px
+        margin-right: 13px
+    &__icon
+      padding: 0
+      margin: 0
+      &-wrapper
+        min-width: 30px
+    &__message
+      margin-bottom: 13px
