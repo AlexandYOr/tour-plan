@@ -18,19 +18,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile-fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/Horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -48,6 +48,18 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible"> 
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+            <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
+            <span class="user__name user__name--light">Nathan</span>
+          </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+            <input type="text" class="search__input" placeholder="Search Location">
+            <button class="search__button"><img src="img/search.svg" alt="Icon: Search"></button>
+          </form>
+        </li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -505,25 +517,25 @@
       <div class="activities-wrapper">
         <div class="card activities__card">
           <img src="img/card_1.jpg" alt="The curious corner of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner of chamarel</h3>
+          <h3 class="card__title card__title--chamarel">The curious corner of chamarel</h3>
           <button class="card-button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card_2.jpg" alt="Gymkhana club golf course" class="card__image">
-          <h3 class="card__title">Gymkhana club golf course</h3>
+          <h3 class="card__title card__title--golf">Gymkhana club golf course</h3>
           <button class="card-button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card_3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+          <h3 class="card__title card__title--trip">Tamarind falls hiking trip - full day</h3>
           <button class="card-button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card_4.jpg" alt="The blue marine discovery quest" class="card__image">
-          <h3 class="card__title">The blue marine discovery quest</h3>
+          <h3 class="card__title card__title--quest">The blue marine discovery quest</h3>
           <button class="card-button">Book Now</button>
         </div>
         <!-- /.card -->
