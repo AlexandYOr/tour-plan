@@ -2381,9 +2381,6 @@ template {
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 280px;
-  }
   .navbar-top {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -2670,6 +2667,9 @@ template {
 @media (max-width: 320px) {
   body {
     padding-top: 58px;
+  }
+  .container {
+    max-width: 280px;
   }
   .reviews {
     padding-bottom: 73px;
