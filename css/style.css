@@ -2147,7 +2147,7 @@ template {
     display: -ms-flexbox;
     display: flex;
     width: 16px;
-    height: 16px;
+    height: 10px;
     border: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2382,7 +2382,11 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 280  px;
+    max-width: 280px;
+  }
+  .navbar-top {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .logo {
     width: 99px;
@@ -2436,13 +2440,13 @@ template {
     top: 30px;
   }
   .reviews-slider__button--prev {
-    left: 50%;
+    left: 49%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     margin-left: -95px;
   }
   .reviews-slider__button--next {
-    right: 50%;
+    right: 54%;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-right: -95px;
@@ -2542,7 +2546,7 @@ template {
   }
   .footer__title {
     margin: 0;
-    margin-right: 43px;
+    margin-right: 34px;
     margin-bottom: 19px;
   }
   .footer__title--inline {
@@ -2660,6 +2664,30 @@ template {
   }
   .footer__message {
     margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 58px;
+  }
+  .reviews {
+    padding-bottom: 73px;
+  }
+  .reviews-slider__item {
+    max-width: 280px;
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
+  .newsletter-wrapper {
+    margin-left: 19px;
+  }
+  .footer__icon {
+    margin: 0;
+  }
+  .footer__icon-wrapper {
+    min-width: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
