@@ -2139,6 +2139,9 @@ template {
   .navbar-bottom--visible {
     display: block;
   }
+  .search__button--mobile--visible {
+    max-width: 49px;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
