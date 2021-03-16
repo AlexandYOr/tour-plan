@@ -1691,6 +1691,10 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item--mb-0 {
+  margin: 0;
+}
+
 .footer__icon {
   width: 20px;
   height: 20px;
@@ -1888,6 +1892,15 @@ template {
   .map {
     width: 340px;
   }
+  .reviews-slider__button {
+    top: 50%;
+  }
+  .reviews-slider__button--prev {
+    left: 1px;
+  }
+  .reviews-slider__button--next {
+    right: 1px;
+  }
   .reviews-slider__item {
     max-width: 579px;
   }
@@ -1910,7 +1923,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 250px;
+    height: 254px;
   }
   .card__title--chamarel {
     max-width: 160px;
@@ -1993,9 +2006,17 @@ template {
   }
   .footer__title {
     margin-top: 8px;
+    margin-bottom: 19px;
+  }
+  .footer__title--inline {
+    margin-top: 27px;
   }
   .footer__title--mb-3 {
     margin-top: 4px;
+    margin-bottom: 27px;
+  }
+  .footer__title--mb-1 {
+    margin-top: 16px;
   }
   .footer__social-network {
     padding-top: 28px;
@@ -2031,7 +2052,7 @@ template {
     grid-column: span 4;
   }
   .footer__text {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
   .footer__icon {
     margin-left: 5px;
@@ -2070,6 +2091,10 @@ template {
     grid-column: 9 / 13;
     -ms-grid-column-align: end;
         justify-self: end;
+  }
+  .star__reviews {
+    margin-right: 1px;
+    width: 9px;
   }
 }
 
@@ -2550,7 +2575,7 @@ template {
   .footer__title {
     margin: 0;
     margin-right: 34px;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
   }
   .footer__title--inline {
     margin-top: 8px;
@@ -2607,7 +2632,7 @@ template {
     max-width: 275px;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
@@ -2677,6 +2702,29 @@ template {
   .container {
     max-width: 280px;
   }
+  .hotel__stars {
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .hotel-stars {
+    margin-right: 2px;
+  }
+  .hotel-slider__button {
+    height: 10px;
+  }
+  .hotel-slider__button--prev {
+    left: 0;
+  }
+  .hotel-slider__button--next {
+    right: 0;
+  }
+  .booking__pricetag {
+    margin-bottom: -4px;
+  }
+  .booking__num {
+    margin-left: 8px;
+    margin-right: 2px;
+  }
   .reviews {
     padding-bottom: 73px;
   }
@@ -2689,11 +2737,26 @@ template {
   .newsletter-wrapper {
     margin-left: 19px;
   }
+  .footer__contact-form {
+    padding: 0;
+    margin: 0;
+  }
   .footer__icon {
     margin: 0;
+    margin-top: 5px;
   }
   .footer__icon-wrapper {
     min-width: 30px;
+  }
+  .footer__item--mb-2 {
+    margin-bottom: 24px;
+    padding-right: 13px;
+  }
+  .footer__item--mb-0 {
+    margin-bottom: 20px;
+  }
+  .footer__bottom-link {
+    margin-right: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */

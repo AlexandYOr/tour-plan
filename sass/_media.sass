@@ -60,6 +60,12 @@
     width: 340px
   .reviews
     &-slider
+      &__button
+        top: 50%
+        &--prev
+          left: 1px
+        &--next
+          right: 1px
       &__item
         max-width: 579px
     &__title
@@ -76,7 +82,7 @@
       margin-bottom: 20px
   .card
     width: 340px
-    height: 250px
+    height: 254px
     &__title
       &--chamarel
         max-width: 160px
@@ -135,8 +141,14 @@
       grid-column: span 2
     &__title
       margin-top: 8px
+      margin-bottom: 19px
+      &--inline
+        margin-top: 27px
       &--mb-3
         margin-top: 4px
+        margin-bottom: 27px
+      &--mb-1
+        margin-top: 16px
     &__social
       &-network
         padding-top: 28px
@@ -159,7 +171,7 @@
       padding-left: 25px
       grid-column: span 4
     &__text
-      margin-bottom: 23px
+      margin-bottom: 18px
     &__icon
       margin-left: 5px
     &__contact
@@ -184,6 +196,10 @@
       &-icon
         grid-column: 9 / 13
         justify-self: end
+  .star
+    &__reviews
+      margin-right: 1px
+      width: 9px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -523,7 +539,7 @@
     &__title
       margin: 0
       margin-right: 34px
-      margin-bottom: 19px
+      margin-bottom: 17px
       &--inline
         margin-top: 8px
         margin-bottom: 24px
@@ -562,7 +578,7 @@
         max-width: 275px
         padding: 0
         margin: 0
-        margin-top: 5px
+        margin-top: 10px
         grid-row: 6
         grid-column: 1
       &-form
@@ -605,6 +621,25 @@
     padding-top: 58px
   .container
     max-width: 280px
+  .hotel
+    &__stars
+      margin-right: 15px
+      margin-top: 5px
+    &-stars
+      margin-right: 2px
+    &-slider
+      &__button
+        height: 10px
+        &--prev
+          left: 0
+        &--next
+          right: 0
+  .booking
+    &__pricetag
+      margin-bottom: -4px
+    &__num
+      margin-left: 8px
+      margin-right: 2px
   .reviews
     padding-bottom: 73px
     &-slider
@@ -616,7 +651,21 @@
     &-wrapper
       margin-left: 19px
   .footer
+    &__contact
+      &-form
+        padding: 0
+        margin: 0
     &__icon
       margin: 0
+      margin-top: 5px
       &-wrapper
         min-width: 30px
+    &__item
+      &--mb-2
+        margin-bottom: 24px
+        padding-right: 13px
+      &--mb-0
+        margin-bottom: 20px
+    &__bottom
+      &-link
+        margin-right: 11px
