@@ -15,11 +15,13 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта для рассылки:</b>$email<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Телефон  :</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
-
 ";
+$sendMail = "
+<b>Почта клиента для рассылки новостей: $email</b>
+";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -42,9 +44,16 @@ try {
     $mail->addAddress('avo01121997@yandex.ru');  
 
 // Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+if ($email == null) {
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $body;
+} 
+elseif(($email != null and $phone == null)) {
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $sendMail;
+}    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -57,3 +66,4 @@ else {$result = "error";}
 
 // Отображение результата
 header ('Location: thankyou.html');
+
