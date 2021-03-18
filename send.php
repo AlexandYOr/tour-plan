@@ -36,7 +36,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'emailfortasting@yandex.ru'; // Логин на почте
-    $mail->Password   = 'Walrus9096'; // Пароль на почте
+    $mail->Password   = 'Sashalexxandr9096'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('emailfortasting@yandex.ru', 'Test Email'); // Адрес самой почты и имя отправителя
