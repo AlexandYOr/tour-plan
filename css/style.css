@@ -1572,7 +1572,7 @@ template {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  padding-top: 23px;
+  padding-top: 16px;
 }
 
 .footer__categories {
@@ -1990,6 +1990,7 @@ template {
         flex-basis: 49%;
   }
   .footer__logo {
+    padding-top: 10px;
     width: 97px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -1997,7 +1998,7 @@ template {
     grid-column: span 2;
   }
   .footer__title {
-    margin-top: 8px;
+    margin-top: 6px;
     margin-bottom: 19px;
   }
   .footer__title--inline {
@@ -2011,8 +2012,8 @@ template {
     margin-top: 16px;
   }
   .footer__social-network {
-    padding-top: 28px;
-    padding-left: 11px;
+    padding-top: 22px;
+    padding-left: 6px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -2559,7 +2560,7 @@ template {
     grid-row-gap: 30px;
   }
   .footer__logo {
-    padding-top: 15px;
+    padding-top: 8px;
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
@@ -2571,7 +2572,7 @@ template {
     margin-bottom: 17px;
   }
   .footer__title--inline {
-    margin-top: 8px;
+    margin-top: 5px;
     margin-bottom: 24px;
   }
   .footer__title--mb-1 {
