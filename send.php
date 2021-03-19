@@ -19,8 +19,14 @@ $body = "
 <b>Сообщение:</b><br>$message
 ";
 $sendMail = "
-<h2>Новое обращение</h2>
 <b>Почта клиента для рассылки новостей: $email</b>
+";
+$modal = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон  :</b> $phone<br><br>
+<b>Почта клиента для рассылки новостей: $email</b><br>
+<b>Сообщение:</b><br>$message
 ";
 
 
@@ -49,12 +55,15 @@ if ($email == null) {
   $mail->isHTML(true);
   $mail->Subject = $title;
   $mail->Body = $body;
-} 
-elseif(($email != null and $phone == null)) {
+} elseif($email != null and $phone != null) {
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $modal;
+} elseif(($email != null and $phone == null)) {
   $mail->isHTML(true);
   $mail->Subject = $title;
   $mail->Body = $sendMail;
-}    
+}
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
