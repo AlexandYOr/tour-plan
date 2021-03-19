@@ -50,6 +50,16 @@ form, textarea, input {
   border: none;
 }
 
+.return {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button__return {
+  max-width: 250px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
