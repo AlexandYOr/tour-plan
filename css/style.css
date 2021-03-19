@@ -2222,6 +2222,9 @@ template {
     margin-right: 1px;
     width: 9px;
   }
+  .modal__dialog {
+    padding: 33px 64px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2532,6 +2535,7 @@ template {
   }
   .modal__dialog {
     padding: 33px 33px;
+    min-width: 390px;
   }
 }
 
@@ -2824,7 +2828,7 @@ template {
     margin-bottom: 13px;
   }
   .modal__dialog {
-    width: 350px;
+    min-width: 330px;
   }
 }
 
@@ -2892,7 +2896,7 @@ template {
     margin-right: 11px;
   }
   .modal__dialog {
-    width: 280px;
+    min-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
