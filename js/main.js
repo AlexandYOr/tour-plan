@@ -35,7 +35,7 @@ $(document).ready(function () {
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener('click', function () {
     document.querySelector(".navbar-bottom")
-    .classList.toggle('navbar-bottom--visible')
+    classList.toggle('navbar-bottom--visible')
   });
   
   var modalButton = $('[data-toggle=modal]');
@@ -48,16 +48,26 @@ $(document).ready(function () {
   function openModal() {
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    $("body").css("overflow","hidden");
   }
   function closeModal(event) {
     event.preventDefault();
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    $("body").css("overflow","scroll");
   }
   $(document).keydown(function(e) {
     if (e.keyCode == 27) {
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
+      $("body").css("overflow","scroll");
     }
-});
+  });
+  $(document).click(function (e) {
+    if ($(e.target).is('.modal__overlay')) {
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      $("body").css("overflow","scroll")
+    }
+  });
 })
