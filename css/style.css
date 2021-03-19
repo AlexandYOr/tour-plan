@@ -1767,6 +1767,10 @@ template {
   margin-bottom: 26px;
   max-height: 123px;
   resize: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
 }
 
 .footer__button {
