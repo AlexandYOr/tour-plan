@@ -1869,11 +1869,15 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  height: 80%;
+  overflow-y: auto;
+  max-height: 507px;
 }
 
 .modal__close {
@@ -2228,7 +2232,7 @@ template {
     -ms-grid-column-align: end;
         justify-self: end;
   }
-  .star__reviews {
+  .star-reviews {
     margin-right: 1px;
     width: 9px;
   }
