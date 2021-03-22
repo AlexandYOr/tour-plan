@@ -38,7 +38,13 @@ form, textarea, input,
   border: none
 .invalid
   color: $primary
-
+.modal
+  &__dialog
+    -ms-overflow-style: none
+    &::-webkit-scrollbar 
+      width: 0
+.element
+  -ms-overflow-style: none
   // настройки для thankyou.html
 .return
   display: block

@@ -54,6 +54,18 @@ form, textarea, input {
   color: #EC1F46;
 }
 
+.modal__dialog {
+  -ms-overflow-style: none;
+}
+
+.modal__dialog::-webkit-scrollbar {
+  width: 0;
+}
+
+.element {
+  -ms-overflow-style: none;
+}
+
 .return {
   display: block;
   width: 100%;
@@ -502,6 +514,7 @@ template {
   width: 65px;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .user {
