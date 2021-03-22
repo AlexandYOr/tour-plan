@@ -34,6 +34,10 @@ form, textarea, input {
   line-height: 15px;
 }
 
+textarea {
+  resize: none;
+}
+
 .input {
   background-color: #fff;
   border: none;
@@ -61,14 +65,14 @@ form, textarea, input {
   width: 0;
 }
 
-.element {
-  -ms-overflow-style: none;
-}
-
 .return {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.button {
+  cursor: pointer;
 }
 
 .button__return {
@@ -1787,6 +1791,7 @@ template {
 }
 
 .footer__input-group {
+  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1911,7 +1916,12 @@ template {
 
 .modal__input {
   width: 100%;
+}
+
+.modal__input-group {
   margin-top: 15px;
+  width: 100%;
+  height: 50px;
 }
 
 .modal__message {
@@ -2933,6 +2943,9 @@ template {
   }
   .modal__dialog {
     min-width: 280px;
+  }
+  .modal__button {
+    max-width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

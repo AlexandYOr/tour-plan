@@ -81,10 +81,11 @@ menuButton.addEventListener('click', function () {
         },
         email: {
           required: "Please enter your email adress",
-          email: "Your email address must be in the format of name@domain.com"},
+          email: "Format for email name@domain.com"},
         phone: {
-            required: "Please enter your phone number"
-        }
+          required: "Phone is required",
+          minlength: "Phone number must be at least 11 digits"
+        },
       }
     });
   });
