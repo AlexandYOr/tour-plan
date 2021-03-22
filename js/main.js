@@ -70,4 +70,22 @@ menuButton.addEventListener('click', function () {
       $("body").css("overflow","scroll")
     }
   });
-})
+  // обработка форм
+  $(".form").each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must not be shorter than 2 letters",
+        },
+        email: {
+          required: "Please enter your email adress",
+          email: "Your email address must be in the format of name@domain.com"},
+        phone: {
+            required: "Please enter your phone number"
+        }
+      }
+    });
+  })
+  })
