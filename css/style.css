@@ -1886,7 +1886,7 @@ template {
   opacity: 1;
   height: 73%;
   overflow-y: auto;
-  max-height: 620px;
+  max-height: 525px;
 }
 
 .modal__close {
