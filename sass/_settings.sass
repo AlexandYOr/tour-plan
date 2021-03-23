@@ -18,14 +18,15 @@ a:hover
 // Стандартные настройки для форм и инпутов
 form, textarea, input, button
   outline: none
-form, textarea, input, 
-  font-family: Mulish
+form, textarea, input
   font-style: normal
   font-weight: normal
   font-size: 12px
   line-height: 15px
 textarea
   resize: none
+.button
+  cursor: pointer
 .input
   background-color: $light
   border: none
@@ -37,6 +38,7 @@ textarea
   border-radius: 4px
   padding: 18px 23px
   border: none
+  
 // настройки для модалки 
 .invalid
   color: $primary
@@ -46,13 +48,11 @@ textarea
     &::-webkit-scrollbar 
       width: 0
 
-
 // настройки для thankyou.html
 .return
   display: block
   width: 100%
   margin-bottom: 20px
 .button
-  cursor: pointer
   &__return
     max-width: 250px
