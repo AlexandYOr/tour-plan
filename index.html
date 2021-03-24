@@ -6,13 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="maps.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="maps.googleapis.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" media="all" onload="this.media='all'">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/aos.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script defer src="js/parallax.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/jquery-3.6.0.min.js"></script>
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/aos.js"></script>
+  <script defer src="js/main.js"></script>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +40,7 @@
           </button>
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
-          <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
+          <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
         <!-- /.user -->
@@ -125,15 +134,15 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide1.png"
+            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide1.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide2.png"
+            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide2.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide3.png"
+            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide3.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide4.png"
+            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide4.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide5.png"
+            <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide5.jpg"
                 alt="slide"></div>
           </div>
           <!-- If we need navigation buttons -->
@@ -409,7 +418,7 @@
     <!-- /.container -->
   </section>
   <!-- /.packages -->
-  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter_bgi.jpeg">
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter_bgi.jpg">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
@@ -663,13 +672,6 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-  <script src="js/parallax.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
 </body>
 
 </html>
