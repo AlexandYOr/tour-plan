@@ -14,26 +14,24 @@
       visibility: visible
       opacity: 1
   &__dialog
-    position: fixed
-    top: 50%
-    left: 50%
-    max-width: 478px
-    padding: 33px 88px
-    background-color: $dark
-    transform: translate(-50%, -50%)
-    color: $light
-    border-radius: 8px
-    z-index: 104
-    visibility: hidden
-    opacity: 0
-    transition: opacity 0.4s
-    overflow-y: auto
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 478px;
+    padding: 33px 88px;
+    background-color: #0A223D;
+    color: #fff;
+    border-radius: 8px;
+    z-index: 103;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
     &--visible
       visibility: visible
       opacity: 1
-      height: 73%
-      overflow-y: auto
-      max-height: 525px
+      height: 490px
+      overflow: auto
   &__close
     position: absolute
     top: 18px
@@ -52,13 +50,13 @@
     margin-top: 15px
   &__button
     max-width: 160px
-    margin-top: 15px
+    margin-top: 20px
   &__info
-    padding-top: 3px
+    padding-top: 22px
     font-family: Mulish
     font-style: normal
     font-weight: bold
-    font-size: 11px
+    font-size: 12px
     line-height: 15px
     color: #e0e0e0
   &__title
@@ -70,8 +68,9 @@
     text-transform: uppercase
     margin-bottom: 15px
     text-align: center
+    margin-top: 0
+    margin-bottom: 0
   &__form
-    padding-top: 7px
     display: flex
     align-items: center
     justify-content: space-between

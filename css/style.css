@@ -1897,24 +1897,22 @@ template {
   max-width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   color: #fff;
   border-radius: 8px;
-  z-index: 104;
+  z-index: 103;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  overflow-y: auto;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-  height: 73%;
-  overflow-y: auto;
-  max-height: 525px;
+  height: 490px;
+  overflow: auto;
 }
 
 .modal__close {
@@ -1943,15 +1941,15 @@ template {
 
 .modal__button {
   max-width: 160px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .modal__info {
-  padding-top: 3px;
+  padding-top: 22px;
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 15px;
   color: #e0e0e0;
 }
@@ -1965,10 +1963,11 @@ template {
   text-transform: uppercase;
   margin-bottom: 15px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .modal__form {
-  padding-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
