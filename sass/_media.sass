@@ -63,6 +63,8 @@
     width: 340px
   .reviews
     &-slider
+      &__profile
+        margin-bottom: 30px
       &__button
         top: 50%
         &--prev
@@ -82,7 +84,7 @@
     &-wrapper
       flex-wrap: wrap
     &__card
-      margin-bottom: 20px
+      margin-bottom: 22px
   .card
     width: 340px
     height: 254px
@@ -97,14 +99,12 @@
         max-width: 200px
   .packages
     &-wrapper
-      grid-template-rows: 450px 450px
+      max-width: 700px
+      grid-template: 500px 500px 500px / 1fr 1fr
+      grid-template-areas: "first first" "second third" "fourth fifth"
   .main
     &__image
-      max-width: 228px
-      max-height: 450px
       object-fit: cover
-    &-booking
-      padding: 30px 11px 15px 21px
       &__title
         margin-bottom: 18px
       &__room
@@ -119,20 +119,12 @@
         padding: 9px 14px
   .secondary
     &-booking
-      padding: 15px 11px 12px 16px
-      &__title
-        margin-top: 0px
-      &__text
-        font-size: 8px
       &__button
         padding: 9px 14px
-      &__value
-        &--new
-          font-size: 20px
     &__image
       min-height: 230px
   .footer
-    padding-top: 50px
+    padding-top: 53px
     &-wrapper
       grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 40px
@@ -151,7 +143,7 @@
         margin-top: 27px
       &--mb-3
         margin-top: 4px
-        margin-bottom: 27px
+        margin-bottom: 26px
       &--mb-1
         margin-top: 16px
     &__social
@@ -317,8 +309,6 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
-  .subscribe
-    width: 100%
   .reviews
     &-slider
       &__item
@@ -339,83 +329,34 @@
     width: 100%
   .packages
     &-wrapper
-      grid-template-rows: 300px 300px
-      row-gap: 15px
-      column-gap: 15px
+      width: 100%
   .main
     &__image
-      max-width: 187px
-      max-height: 300px
       object-fit: cover
     &-booking
-      padding: 30px 11px 15px 21px
-      &__title
-        margin-bottom: 18px
-        font-size: 14px
-      &__room
-        margin-bottom: 45px
+      padding: 46px 15px 25px 20px
       &__info
-        display: none
-      &__text
-        font-size: 10px
-      &__order
-        flex-direction: row
-        flex-wrap: wrap
-      &__price
-        width: 100%
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 8px
-      &__value
-        &--old
-          font-size: 12px
-        &--new
-          font-size: 20px
-      &__button
-        width: 100%
-        padding: 5px 18px 5px 18px
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 25px
   .offer
     &-main
       font-size: 10px
       padding: 4px 10px 5px 9px
   .secondary
     &-booking
-      padding: 10px 11px 12px 16px
-      &__title
-        font-size: 12px
-        margin-top: 0px
-        margin-bottom: 14px
+      padding: 19px 15px
       &__text
-        font-size: 7px
         margin-bottom: 3px
       &__room
         margin-bottom: 12px
-      &__value
-        &--new
-          font-size: 20px
-      &__order
-        flex-direction: row
-        flex-wrap: wrap
-      &__price
-        width: 100%
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 8px
-      &__value
-        &--old
-          font-size: 14px
-        &--new
-          font-size: 22px
-      &__button
-        width: 100%
-        padding: 5px 18px 5px 18px
     &__image
       min-height: 100px
   .footer 
     &__title
-      font-size: 15px
+      font-size: 14px
+    &__list 
+      padding-left: 0
     &__input
       &-group
         flex-basis: 100%
@@ -488,7 +429,7 @@
   .activities
     padding-top: 0px
     margin-top: 22px
-    padding-bottom: 42px
+    padding-bottom: 35px
     &__title
       margin-bottom: 36px
       font-size: 18px
@@ -507,9 +448,10 @@
   .packages
     width: 100%
     &-wrapper
-      grid-template-columns: 100% 100% 100% 100% 100%
-      grid-template-rows: 300px 300px 300px 300px 300px
-      grid-template-areas: 'first' 'second' 'third' 'fourth' 'fifth'
+      max-width: 100%;
+      grid-template: repeat(5, 500px)/repeat(5, 100%)
+      grid-template-areas: "first" "second" "third" "fourth" "fifth"
+      column-gap: 0px
     &__title
       width: 245px
       margin: auto
@@ -519,11 +461,12 @@
   .main
     flex-direction: column
     &__image
-      min-height: 100px
       min-width: 100%
+      max-width: 100%
+      height: 50%
     &-booking
+      height: 50%
       width: 100%
-      padding: 10px 11px 12px 16px
       &__title
         font-size: 18px
         margin-top: 0px
@@ -533,6 +476,10 @@
       &__text
         font-size: 14px
         margin-bottom: 3px
+      &__info
+        display: none
+      &__button
+        padding: 9px 14px
   .secondary
     &__image
       width: 100%
@@ -567,6 +514,7 @@
       margin: 0
       margin-right: 34px
       margin-bottom: 17px
+      font-size: 18px 
       &--inline
         margin-top: 5px
         margin-bottom: 24px
@@ -602,14 +550,14 @@
       margin-top: 24px
     &__contact
       &-details
-        max-width: 275px
+        max-width: 100%
         padding: 0
         margin: 0
         margin-top: 10px
         grid-row: 6
         grid-column: 1
       &-form
-        width: 280px
+        width: 100%
         padding-top: 5px
         grid-row: 7
         grid-column: 1
@@ -659,11 +607,12 @@
       margin-right: 2px
     &-slider
       &__button
-        height: 10px
         &--prev
           left: 0
+          background-image: url(../img/arrow-prev-phone.svg)
         &--next
           right: 0
+          background-image: url(../img/arrow-next-phone.svg)
   .booking
     &__pricetag
       margin-bottom: -4px
@@ -693,15 +642,19 @@
     &__item
       &--mb-2
         margin-bottom: 24px
-        padding-right: 43px
+        padding-right: 48px
       &--mb-0
         margin-bottom: 20px
     &__bottom
+      &-links
+        margin-top: -3px
       &-link
         margin-right: 11px
     &__button
       font-size: 12px
       line-height: 15px
+    &__info
+      padding-top: 0px
   .modal
     &__dialog
       min-width: 280px
