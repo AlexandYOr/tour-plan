@@ -77,7 +77,7 @@ iframe {
   margin-bottom: 20px;
 }
 
-.button__return {
+.button-return {
   max-width: 250px;
 }
 
@@ -708,16 +708,16 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.hotel-stars {
+  margin-right: 2px;
+}
+
 .stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-
-.stars__image {
-  margin-right: 2px;
 }
 
 .offer {
@@ -746,6 +746,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter--max {
+  font-size: 9px;
 }
 
 .hotel-slider__image {
@@ -1146,6 +1150,8 @@ template {
   text-align: justify;
   margin: auto;
   max-width: 537px;
+  max-height: 140px;
+  overflow-y: auto;
 }
 
 .star-reviews {
@@ -1321,14 +1327,14 @@ template {
 }
 
 .main__image {
-  width: 366px;
+  width: 50%;
   max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .main-booking {
-  width: 364px;
+  width: 50%;
   background-color: #0A223D;
   color: #fff;
   padding: 46px 21px 30px 43px;
@@ -1345,6 +1351,8 @@ template {
 }
 
 .main-booking__info {
+  height: 154px;
+  overflow: auto;
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -1450,8 +1458,9 @@ template {
 }
 
 .stars__image--packages {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
+  margin-right: 4px;
 }
 
 .secondary {
@@ -1912,14 +1921,15 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-  height: 56%;
-  overflow-y: auto;
+  max-height: 490px;
+  height: 90%;
+  overflow: auto;
 }
 
 .modal__close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 15px;
+  right: 18px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -2460,7 +2470,7 @@ template {
     margin-right: -65px;
   }
   .card {
-    width: 100%;
+    width: 49%;
   }
   .packages-wrapper {
     width: 100%;
@@ -2508,13 +2518,17 @@ template {
   }
   .modal__dialog {
     padding: 33px 33px;
-    min-width: 390px;
+    width: 80%;
+    min-width: 330px;
   }
 }
 
 @media (max-width: 576px) {
   body {
     padding-top: 48px;
+  }
+  .container {
+    max-width: 87%;
   }
   .navbar-top {
     padding-top: 10px;
@@ -2619,6 +2633,9 @@ template {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .card {
+    width: 100%;
   }
   .packages {
     width: 100%;
@@ -2875,6 +2892,9 @@ template {
   }
   .newsletter-wrapper {
     margin-left: 19px;
+  }
+  .subscribe__input {
+    padding-left: 22px;
   }
   .footer__contact-details {
     max-width: 100%;
