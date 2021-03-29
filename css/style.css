@@ -750,6 +750,7 @@ template {
 
 .rating__counter--max {
   font-size: 9px;
+  margin: -3px;
 }
 
 .hotel-slider__image {
@@ -2600,6 +2601,9 @@ template {
             transform: translate(50%, 0);
     margin-right: -95px;
   }
+  .reviews-slider__text {
+    max-height: 250px;
+  }
   .activities {
     padding-top: 0px;
     margin-top: 22px;
@@ -2889,6 +2893,7 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
+    max-height: 270px;
   }
   .newsletter-wrapper {
     margin-left: 19px;
